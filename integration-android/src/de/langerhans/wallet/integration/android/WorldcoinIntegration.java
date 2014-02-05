@@ -26,7 +26,7 @@ import android.widget.Toast;
 /**
  * @author Andreas Schildbach
  */
-public final class BitcoinIntegration
+public final class WorldcoinIntegration
 {
 	private static final String INTENT_EXTRA_TRANSACTION_HASH = "transaction_hash";
 

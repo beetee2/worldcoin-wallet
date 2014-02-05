@@ -30,8 +30,8 @@ import android.support.v4.view.ViewPager;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.MenuItem;
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.ECKey;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.ECKey;
 
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.util.ViewPagerTabs;

@@ -45,7 +45,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import com.google.dogecoin.core.Transaction;
+import com.google.worldcoin.core.Transaction;
 
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.util.GenericUtils;

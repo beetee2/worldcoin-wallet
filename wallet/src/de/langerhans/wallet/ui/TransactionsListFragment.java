@@ -59,13 +59,13 @@ import com.actionbarsherlock.view.ActionMode;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.ScriptException;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.Transaction.Purpose;
-import com.google.dogecoin.core.TransactionConfidence.ConfidenceType;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.utils.Threading;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.ScriptException;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.Transaction.Purpose;
+import com.google.worldcoin.core.TransactionConfidence.ConfidenceType;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.utils.Threading;
 
 import de.langerhans.wallet.AddressBookProvider;
 import de.langerhans.wallet.Constants;
@@ -267,7 +267,7 @@ public class TransactionsListFragment extends SherlockListFragment implements Lo
 
 					menu.findItem(R.id.wallet_transactions_context_edit_address).setVisible(address != null);
 
-					serializedTx = tx.unsafeBitcoinSerialize();
+					serializedTx = tx.unsafeWorldcoinSerialize();
 
 					menu.findItem(R.id.wallet_transactions_context_show_qr).setVisible(serializedTx.length < SHOW_QR_THRESHOLD_BYTES);
 

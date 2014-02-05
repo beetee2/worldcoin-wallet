@@ -69,10 +69,10 @@ import android.widget.*;
 
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.Wallet;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.ECKey;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.Wallet;
 
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.WalletApplication;

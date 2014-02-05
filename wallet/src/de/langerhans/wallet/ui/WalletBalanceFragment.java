@@ -43,7 +43,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.google.dogecoin.core.Wallet;
+import com.google.worldcoin.core.Wallet;
 
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.ExchangeRatesProvider;

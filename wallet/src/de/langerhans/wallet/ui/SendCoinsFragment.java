@@ -24,6 +24,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 import android.app.AlertDialog;
+import de.langerhans.wallet.integration.android.WorldcoinIntegration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -71,23 +72,22 @@ import com.actionbarsherlock.view.ActionMode;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.AddressFormatException;
-import com.google.dogecoin.core.NetworkParameters;
-import com.google.dogecoin.core.Sha256Hash;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.TransactionConfidence;
-import com.google.dogecoin.core.TransactionConfidence.ConfidenceType;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.core.Wallet.BalanceType;
-import com.google.dogecoin.core.Wallet.SendRequest;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.AddressFormatException;
+import com.google.worldcoin.core.NetworkParameters;
+import com.google.worldcoin.core.Sha256Hash;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.TransactionConfidence;
+import com.google.worldcoin.core.TransactionConfidence.ConfidenceType;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.core.Wallet.BalanceType;
+import com.google.worldcoin.core.Wallet.SendRequest;
 
 import de.langerhans.wallet.AddressBookProvider;
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.ExchangeRatesProvider;
 import de.langerhans.wallet.ExchangeRatesProvider.ExchangeRate;
 import de.langerhans.wallet.WalletApplication;
-import de.langerhans.wallet.integration.android.BitcoinIntegration;
 import de.langerhans.wallet.offline.SendBluetoothTask;
 import de.langerhans.wallet.ui.InputParser.StringInputParser;
 import de.langerhans.wallet.util.GenericUtils;
@@ -489,7 +489,7 @@ public final class SendCoinsFragment extends SherlockFragment
 
 			if ((Intent.ACTION_VIEW.equals(action) || NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) && intentUri != null
 					&& "dogecoin".equals(scheme))
-				initStateFromBitcoinUri(intentUri);
+				initStateFromWorldcoinUri(intentUri);
 			else if (intent.hasExtra(SendCoinsActivity.INTENT_EXTRA_ADDRESS))
 				initStateFromIntentExtras(intent.getExtras());
 		}
@@ -507,9 +507,9 @@ public final class SendCoinsFragment extends SherlockFragment
 		update(address, addressLabel, amount, bluetoothMac);
 	}
 
-	private void initStateFromBitcoinUri(@Nonnull final Uri bitcoinUri)
+	private void initStateFromWorldcoinUri(@Nonnull final Uri worldcoinUri)
 	{
-		final String input = bitcoinUri.toString();
+		final String input = worldcoinUri.toString();
 
 		new StringInputParser(input)
 		{
@@ -892,7 +892,7 @@ public final class SendCoinsFragment extends SherlockFragment
 				application.broadcastTransaction(sentTransaction);
 
 				final Intent result = new Intent();
-				BitcoinIntegration.transactionHashToResult(result, sentTransaction.getHashAsString());
+				WorldcoinIntegration.transactionHashToResult(result, sentTransaction.getHashAsString());
 				activity.setResult(Activity.RESULT_OK, result);
 			}
 

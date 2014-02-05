@@ -39,14 +39,14 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.ScriptException;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.Transaction.Purpose;
-import com.google.dogecoin.core.TransactionConfidence;
-import com.google.dogecoin.core.TransactionConfidence.ConfidenceType;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.wallet.DefaultCoinSelector;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.ScriptException;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.Transaction.Purpose;
+import com.google.worldcoin.core.TransactionConfidence;
+import com.google.worldcoin.core.TransactionConfidence.ConfidenceType;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.wallet.DefaultCoinSelector;
 
 import de.langerhans.wallet.AddressBookProvider;
 import de.langerhans.wallet.Constants;

@@ -27,7 +27,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import de.langerhans.wallet.integration.android.BitcoinIntegration;
+import de.langerhans.wallet.integration.android.WorldcoinIntegration;
 
 /**
  * @author Andreas Schildbach
@@ -54,7 +54,7 @@ public class SampleActivity extends Activity
 		{
 			public void onClick(final View v)
 			{
-				BitcoinIntegration.requestForResult(SampleActivity.this, REQUEST_CODE, DONATION_ADDRESS);
+				WorldcoinIntegration.requestForResult(SampleActivity.this, REQUEST_CODE, DONATION_ADDRESS);
 			}
 		});
 
@@ -68,7 +68,7 @@ public class SampleActivity extends Activity
 		{
 			if (resultCode == Activity.RESULT_OK)
 			{
-				final String txHash = BitcoinIntegration.transactionHashFromResult(data);
+				final String txHash = WorldcoinIntegration.transactionHashFromResult(data);
 				if (txHash != null)
 				{
 					final SpannableStringBuilder messageBuilder = new SpannableStringBuilder("Transaction hash:\n");

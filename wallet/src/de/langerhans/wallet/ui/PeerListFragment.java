@@ -46,8 +46,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
-import com.google.dogecoin.core.Peer;
-import com.google.dogecoin.core.VersionMessage;
+import com.google.worldcoin.core.Peer;
+import com.google.worldcoin.core.VersionMessage;
 
 import de.langerhans.wallet.service.BlockchainService;
 import de.langerhans.wallet.service.BlockchainServiceImpl;

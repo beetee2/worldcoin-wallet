@@ -63,10 +63,10 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.ShareActionProvider;
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.uri.BitcoinURI;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.ECKey;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.uri.WorldcoinURI;
 
 import de.langerhans.wallet.AddressBookProvider;
 import de.langerhans.wallet.Constants;
@@ -438,7 +438,7 @@ public final class RequestCoinsFragment extends SherlockFragment
 		final String label = includeLabel ? AddressBookProvider.resolveLabel(activity, address.toString()) : null;
 		final BigInteger amount = amountCalculatorLink.getAmount();
 
-		final StringBuilder uri = new StringBuilder(BitcoinURI.convertToBitcoinURI(address, amount, label, null));
+		final StringBuilder uri = new StringBuilder(WorldcoinURI.convertToWorldcoinURI(address, amount, label, null));
 		if (includeBluetoothMac && bluetoothMac != null)
 		{
 			uri.append(amount == null && label == null ? '?' : '&');

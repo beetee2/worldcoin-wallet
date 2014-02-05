@@ -25,8 +25,8 @@ import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.Transaction;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.Transaction;
 
 import de.langerhans.wallet.ui.InputParser.StringInputParser;
 

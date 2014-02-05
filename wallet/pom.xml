@@ -49,11 +49,11 @@
 			<type>apklib</type>
 		</dependency>
 
-		<!-- com.google.dogecoin.* -->
+		<!-- worldcoinj -->
 		<dependency>
-			<groupId>com.google</groupId>
-			<artifactId>dogecoinj</artifactId>
-			<version>0.11-SNAPSHOT</version>
+			<groupId>com.huck</groupId>
+			<artifactId>worldcoinj</artifactId>
+			<version>0.1</version>
 		</dependency>
 
 		<!-- de.schildbach.wallet.integration.android.* -->

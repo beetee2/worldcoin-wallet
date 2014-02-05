@@ -32,8 +32,8 @@ import android.text.Editable;
 import android.text.SpannableStringBuilder;
 import android.widget.RemoteViews;
 
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.core.Wallet.BalanceType;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.core.Wallet.BalanceType;
 
 import de.langerhans.wallet.ui.RequestCoinsActivity;
 import de.langerhans.wallet.ui.SendCoinsActivity;

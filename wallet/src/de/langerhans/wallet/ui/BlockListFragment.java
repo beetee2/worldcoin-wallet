@@ -54,11 +54,11 @@ import com.actionbarsherlock.view.ActionMode;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.google.dogecoin.core.Block;
-import com.google.dogecoin.core.Sha256Hash;
-import com.google.dogecoin.core.StoredBlock;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.Wallet;
+import com.google.worldcoin.core.Block;
+import com.google.worldcoin.core.Sha256Hash;
+import com.google.worldcoin.core.StoredBlock;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.Wallet;
 
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.WalletApplication;

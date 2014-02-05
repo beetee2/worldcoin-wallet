@@ -32,7 +32,7 @@ import android.bluetooth.BluetoothSocket;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.google.dogecoin.core.Transaction;
+import com.google.worldcoin.core.Transaction;
 
 import de.langerhans.wallet.util.Bluetooth;
 
@@ -63,7 +63,7 @@ public abstract class SendBluetoothTask
 			{
 				log.info("trying to send tx " + transaction.getHashAsString() + " via bluetooth");
 
-				final byte[] serializedTx = transaction.unsafeBitcoinSerialize();
+				final byte[] serializedTx = transaction.unsafeWorldcoinSerialize();
 
 				BluetoothSocket socket = null;
 				DataOutputStream os = null;

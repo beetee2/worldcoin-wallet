@@ -23,7 +23,7 @@ import java.util.Locale;
 
 import javax.annotation.Nonnull;
 
-import com.google.dogecoin.core.NetworkParameters;
+import com.google.worldcoin.core.NetworkParameters;
 
 /**
  * @author Andreas Schildbach

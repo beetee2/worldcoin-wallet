@@ -46,13 +46,13 @@ import com.actionbarsherlock.view.ActionMode;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.google.dogecoin.core.AbstractWalletEventListener;
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.core.WalletEventListener;
-import com.google.dogecoin.uri.BitcoinURI;
-import com.google.dogecoin.utils.Threading;
+import com.google.worldcoin.core.AbstractWalletEventListener;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.ECKey;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.core.WalletEventListener;
+import com.google.worldcoin.uri.WorldcoinURI;
+import com.google.worldcoin.utils.Threading;
 
 import de.langerhans.wallet.AddressBookProvider;
 import de.langerhans.wallet.Constants;
@@ -253,7 +253,7 @@ public final class WalletAddressesFragment extends SherlockListFragment
 
 			private void handleShowQr(@Nonnull final Address address)
 			{
-				final String uri = BitcoinURI.convertToBitcoinURI(address, null, null, null);
+				final String uri = WorldcoinURI.convertToWorldcoinURI(address, null, null, null);
 				final int size = (int) (256 * getResources().getDisplayMetrics().density);
 				BitmapFragment.show(getFragmentManager(), Qr.bitmap(uri, size));
 			}

@@ -62,14 +62,14 @@ import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.rolling.RollingFileAppender;
 import ch.qos.logback.core.rolling.TimeBasedRollingPolicy;
 
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.store.UnreadableWalletException;
-import com.google.dogecoin.store.WalletProtobufSerializer;
-import com.google.dogecoin.utils.Threading;
-import com.google.dogecoin.wallet.WalletFiles;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.ECKey;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.store.UnreadableWalletException;
+import com.google.worldcoin.store.WalletProtobufSerializer;
+import com.google.worldcoin.utils.Threading;
+import com.google.worldcoin.wallet.WalletFiles;
 
 import de.langerhans.wallet.service.BlockchainService;
 import de.langerhans.wallet.service.BlockchainServiceImpl;
@@ -129,7 +129,7 @@ public class WalletApplication extends Application
 			@Override
 			public void uncaughtException(final Thread thread, final Throwable throwable)
 			{
-				log.info("bitcoinj uncaught exception", throwable);
+				log.info("worldcoinj uncaught exception", throwable);
 				CrashReporter.saveBackgroundTrace(throwable, packageInfo);
 			}
 		};

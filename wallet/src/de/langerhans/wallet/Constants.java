@@ -24,9 +24,9 @@ import java.nio.charset.Charset;
 import android.os.Environment;
 import android.text.format.DateUtils;
 
-import com.google.dogecoin.core.NetworkParameters;
-import com.google.dogecoin.params.MainNetParams;
-import com.google.dogecoin.params.TestNet3Params;
+import com.google.worldcoin.core.NetworkParameters;
+import com.google.worldcoin.params.MainNetParams;
+import com.google.worldcoin.params.TestNet3Params;
 
 /**
  * @author Andreas Schildbach

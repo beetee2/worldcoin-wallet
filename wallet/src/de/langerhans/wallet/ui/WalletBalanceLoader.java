@@ -24,9 +24,9 @@ import javax.annotation.Nonnull;
 import android.content.Context;
 import android.support.v4.content.AsyncTaskLoader;
 
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.core.Wallet.BalanceType;
-import com.google.dogecoin.utils.Threading;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.core.Wallet.BalanceType;
+import com.google.worldcoin.utils.Threading;
 
 import de.langerhans.wallet.util.ThrottlingWalletChangeListener;
 

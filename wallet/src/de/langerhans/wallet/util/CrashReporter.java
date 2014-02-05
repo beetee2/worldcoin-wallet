@@ -45,9 +45,9 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.TransactionOutput;
-import com.google.dogecoin.core.Wallet;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.TransactionOutput;
+import com.google.worldcoin.core.Wallet;
 
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.WalletApplication;

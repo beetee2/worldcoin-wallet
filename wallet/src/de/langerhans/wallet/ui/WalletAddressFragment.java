@@ -36,8 +36,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.uri.BitcoinURI;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.uri.WorldcoinURI;
 
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.WalletApplication;
@@ -146,7 +146,7 @@ public final class WalletAddressFragment extends Fragment
 			bitcoinAddressLabel.setText(WalletUtils.formatAddress(selectedAddress, Constants.ADDRESS_FORMAT_GROUP_SIZE,
 					Constants.ADDRESS_FORMAT_LINE_SIZE));
 
-			final String addressStr = BitcoinURI.convertToBitcoinURI(selectedAddress, null, null, null);
+			final String addressStr = WorldcoinURI.convertToWorldcoinURI(selectedAddress, null, null, null);
 
 			final int size = (int) (256 * getResources().getDisplayMetrics().density);
 			qrCodeBitmap = Qr.bitmap(addressStr, size);

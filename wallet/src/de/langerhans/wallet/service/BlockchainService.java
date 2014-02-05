@@ -21,8 +21,8 @@ import java.util.List;
 
 import javax.annotation.CheckForNull;
 
-import com.google.dogecoin.core.Peer;
-import com.google.dogecoin.core.StoredBlock;
+import com.google.worldcoin.core.Peer;
+import com.google.worldcoin.core.StoredBlock;
 
 import de.langerhans.wallet.R;
 

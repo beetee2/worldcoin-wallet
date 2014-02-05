@@ -29,15 +29,15 @@ import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface.OnClickListener;
 
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.AddressFormatException;
-import com.google.dogecoin.core.Base58;
-import com.google.dogecoin.core.DumpedPrivateKey;
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.ProtocolException;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.uri.BitcoinURI;
-import com.google.dogecoin.uri.BitcoinURIParseException;
+import com.google.worldcoin.core.Address;
+import com.google.worldcoin.core.AddressFormatException;
+import com.google.worldcoin.core.Base58;
+import com.google.worldcoin.core.DumpedPrivateKey;
+import com.google.worldcoin.core.ECKey;
+import com.google.worldcoin.core.ProtocolException;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.uri.WorldcoinURI;
+import com.google.worldcoin.uri.WorldcoinURIParseException;
 
 import de.langerhans.wallet.Constants;
 import de.langerhans.wallet.util.Bluetooth;
@@ -65,15 +65,15 @@ public abstract class InputParser
 			{
 				try
 				{
-					final BitcoinURI bitcoinUri = new BitcoinURI(null, input);
-					final Address address = bitcoinUri.getAddress();
-					final String addressLabel = bitcoinUri.getLabel();
-					final BigInteger amount = bitcoinUri.getAmount();
-					final String bluetoothMac = (String) bitcoinUri.getParameterByName(Bluetooth.MAC_URI_PARAM);
+					final WorldcoinURI worldcoinURI = new WorldcoinURI(null, input);
+					final Address address = worldcoinURI.getAddress();
+					final String addressLabel = worldcoinURI.getLabel();
+					final BigInteger amount = worldcoinURI.getAmount();
+					final String bluetoothMac = (String) worldcoinURI.getParameterByName(Bluetooth.MAC_URI_PARAM);
 
 					bitcoinRequest(address, addressLabel, amount, bluetoothMac);
 				}
-				catch (final BitcoinURIParseException x)
+				catch (final WorldcoinURIParseException x)
 				{
 					error(R.string.input_parser_invalid_bitcoin_uri, input);
 				}

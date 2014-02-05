@@ -19,9 +19,9 @@ package de.langerhans.wallet.ui;
 
 import javax.annotation.Nonnull;
 
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.VerificationException;
-import com.google.dogecoin.core.Wallet;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.VerificationException;
+import com.google.worldcoin.core.Wallet;
 
 import de.langerhans.wallet.WalletApplication;
 

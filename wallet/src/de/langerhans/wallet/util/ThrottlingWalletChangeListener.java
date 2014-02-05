@@ -24,11 +24,11 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import android.os.Handler;
 
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.core.WalletEventListener;
-import com.google.dogecoin.script.Script;
+import com.google.worldcoin.core.ECKey;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.core.WalletEventListener;
+import com.google.worldcoin.script.Script;
 
 /**
  * @author Andreas Schildbach

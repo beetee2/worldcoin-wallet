@@ -22,10 +22,10 @@ import javax.annotation.Nonnull;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.google.dogecoin.core.InsufficientMoneyException;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.core.Wallet.SendRequest;
+import com.google.worldcoin.core.InsufficientMoneyException;
+import com.google.worldcoin.core.Transaction;
+import com.google.worldcoin.core.Wallet;
+import com.google.worldcoin.core.Wallet.SendRequest;
 
 /**
  * @author Andreas Schildbach
